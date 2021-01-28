@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>first html</title>
+	<link rel="icon" href="profile-user.svg" />
+	<meta name="viewport" content="
+	width=device-width,initial-scale=1.0">
+	<style type="text/css">
+		section~p{
+			background:yellow;
+		}
+		body{
+			text-align: :center;
+			background:#63FF36;
+		}
+		.parent{
+			display: flex;
+			flex-direction: row;
+			flex-wrap:wrap;
+			justify-content:space-around;
+
+		}
+		.child{
+			background: blue;
+			border: 1px dashed red;
+			width: 30%;
+			size: 120px;
+			font-size: 40px;
+			padding: 1%;
+			margin:1%;
+			justify-content: space-between;
+		}
+		/small scale devices/
+		@media only screen and (min-width: 300px) and (max-width: 500px){
+			.child{
+				width: 40%;
+				font-size:23px;
+				background-color: #fff;
+			}
+			@media only screen and (min-width: 400px) and (max-width: 700px){
+			.child{
+				width: 40%;
+				font-size:23px;
+				background-color: #fff;
+				border-radius:10px;
+			}
+		}
+		/large scale devices/
+		@media only screen and (min-width:768px) and (max-width: 1024px){
+			.child{
+				width:25%;
+				box-shadow:0px 8px 8px -8px #000;			}
+		}
+	</style>
+	
+</head>
+<body >
+	<section class="parent" size="50px" >
+		<article class="child" align="center">America</article>
+		<article class="child" align="center">Bangladesh</article>
+		<article class="child" align="center">Canada</article>
+		<article class="child" align="center">Dubai</article>
+	</section>
+	<!--<div>
+		<p>para0</p>
+		<section>
+ 			section 1
+		</section>
+		<section>
+			section 2
+		</section>
+		<p>paragraph1</p>
+		<p>para2</p>
+		<p>para3</p>
+	</div>-->
+<!--1.basic selectors 
+  i.id(#)
+  ii.class(.)
+  iii.element(<ELEMENT></ELEMENT>>)
+  iv.universal(*)
+2.Relational selectors
+  i.descendent combiner(>)
+  ii.child combiner( )
+  iii.Adjacent sibling selectors(+)                                                                 
+  iv.General sibling selectors(~)
+  v.Attribute selectors
+3.Pseudo classes -->
+</body>
+</html>
